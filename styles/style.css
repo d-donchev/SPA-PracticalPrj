@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(226,240,217);
+    font-family: Calibri;
+}
+
+header, footer, .blockNavigation {
+    text-align: center;
+    border: 1px solid rgb(80,126,50);
+    background: rgb(169,209,142);
+}
+
+#wrapper {
+    width: 150px;
+    margin: 20px;
+    color: #000;
+    border: 1px solid rgb(80,126,50);
+}
+
+.blockNavigation {
+    /*float: left;*/
+    padding: 10px 20px;
+    border: 1px solid rgb(80,126,50);
+}
+
+.button {
+    margin: 20px 0 0 0;
+    width: 100px;
+    height: 30px;
+    background: rgb(112,173,71);
+    border-radius: 10px;    
+}
+
+footer {
+    
+    
+}
