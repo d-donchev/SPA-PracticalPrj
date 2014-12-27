@@ -22,7 +22,6 @@ header, footer, .blockNavigation {
 }
 
 .blockNavigation {
-    /*float: left;*/
     padding: 10px 20px;
     border: 1px solid rgb(80,126,50);
 }
@@ -32,10 +31,22 @@ header, footer, .blockNavigation {
     width: 100px;
     height: 30px;
     background: rgb(112,173,71);
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-footer {
-    
-    
+.secCenter {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.blockCenter {
+    width: 200px;
+    display: block;
+}
+
+#txtDescription, #txtName {
+    margin: 10px 20px;
+    padding: 5px;
+    border: 1px solid rgb(80,126,50);
 }
