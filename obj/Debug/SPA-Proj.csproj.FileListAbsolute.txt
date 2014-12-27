@@ -1,0 +1,5 @@
+C:\Users\SESA29880\Documents\Projects\_SoftUni-SPA\GitHub\SPA-PracticalPrj\bin\SPA-Proj.dll
+C:\Users\SESA29880\Documents\Projects\_SoftUni-SPA\GitHub\SPA-PracticalPrj\bin\SPA-Proj.pdb
+C:\Users\SESA29880\Documents\Projects\_SoftUni-SPA\GitHub\SPA-PracticalPrj\obj\Debug\SPA-Proj.csprojResolveAssemblyReference.cache
+C:\Users\SESA29880\Documents\Projects\_SoftUni-SPA\GitHub\SPA-PracticalPrj\obj\Debug\SPA-Proj.dll
+C:\Users\SESA29880\Documents\Projects\_SoftUni-SPA\GitHub\SPA-PracticalPrj\obj\Debug\SPA-Proj.pdb

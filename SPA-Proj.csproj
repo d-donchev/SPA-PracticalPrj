@@ -57,8 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\i-phone.png" />
+    <Content Include="images\no-img.png" />
     <Content Include="index.html" />
-    <Content Include="styles\style.css" />
     <Content Include="styles\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
