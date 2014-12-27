@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(226,240,217);
+    font-family: Calibri;
+}
+
+header, footer {
+    text-align: center;
+    border: 1px solid rgb(80,126,50);
+    background: rgb(169,209,142);
+}
+
+.wrapper {
+    right: 0;
+    text-align: center;
+}
+
+    .wrapper .secLeft, .wrapper .secCenter, .wrapper .secRight {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .wrapper .secLeft {
+        float: left;
+        width: 150px;
+    }
+
+        .wrapper .secLeft .blockLoginRegister, .wrapper .secCenter .blockCenter {
+            padding: 10px;
+            border: 1px solid rgb(80,126,50);
+            background: rgb(169,209,142);
+        }
+
+.button {
+    margin: 20px 0 10px 0;
+    width: 100px;
+    height: 30px;
+    background: rgb(112,173,71);
+    border-radius: 10px;
+}
+
+.wrapper .secCenter {
+    margin: 20px auto;
+    width: 600px;
+}
+
+#txtDescription, #txtName {
+    margin: 0 0 0 20px;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid rgb(80,126,50);
+}
+
+.wrapper .secRight {
+    float: right;
+    width: 150px;
+}
+
+    .wrapper .secRight .blockCategories, .wrapper .secRight .blockTowns {
+        margin: 0 0 20px 20px;
+        border: 1px solid rgb(80,126,50);
+        background: rgb(169,209,142);
+    }
+
+.clear {
+    clear: both;
+}
+
+footer {
+    display: block;
+}
