@@ -1,4 +1,4 @@
-app.controller('Adv', function ($scope) {
+app.controller('Adv', function ($scope, $http) {
     $scope.name = 'Ads - Home';
 
     var categories = [
@@ -27,8 +27,20 @@ app.controller('Adv', function ($scope) {
     $scope.ngCategories = categories;
 
     var imgInfo = {
-        name: 'iPhone',
+        imgLabel: 'iPhone',
         pict: 'images/i-phone.png'
     }
     $scope.imgAdv = imgInfo;
+
+    $scope.classTempClass = 'dummyClass';
+    
+    $http.get("http://www.w3schools.com/website/Customers_JSON.php") 
+    .success(function (resp) {
+        $scope.ngCities = resp;
+    });
+
+});
+
+app.controller('AdvAdmin', function ($scope, $http) {
+    $scope.name = 'Adv - Admin';
 });

@@ -51,7 +51,7 @@
             <div class="blockCategories">
                 <h3>Categories</h3>
                 <ul>
-                    <li ng-repeat="cat in ngCategories">
+                    <li ng-repeat="cat in ngCategories" ng-class-odd="classTempClass">
                         {{cat.catName}}
                     </li>
                 </ul>
@@ -59,11 +59,9 @@
             <div class="blockTowns">
                 <h3>Towns</h3>
                 <ul>
-                    <li>All</li>
-                    <li>Cars</li>
-                    <li>Properties</li>
-                    <li>Electronics</li>
-                    <li>Jobs</li>
+                    <li ng-repeat="city in ngCities">
+                        {{city.City}}
+                    </li>
                 </ul>
             </div>
         </div>

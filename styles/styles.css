@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.dummyClass {
+    color: blue;
+}
+
 html {
     background-color: rgb(226,240,217);
     font-family: Calibri;
