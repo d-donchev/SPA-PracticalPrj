@@ -60,6 +60,7 @@
     <Content Include="images\i-phone.png" />
     <Content Include="images\no-img.png" />
     <Content Include="index.html" />
+    <Content Include="lib\angular\angular.min.js" />
     <Content Include="styles\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -74,7 +75,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

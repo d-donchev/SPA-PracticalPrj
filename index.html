@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Ads</title>
 </head>
-<body>
+<body ng-app="adv" ng-controller="Adv">
+    {{name}}
     <header>
         <nav id="menu">
             <h1>Ads - Home</h1>
@@ -32,6 +33,12 @@
                     </div>
                     <div id="txtName">
                         <p>Viktor</p>
+                    </div>
+                    <div id="txtEmail">
+                        <p>igracha@abv.bg</p>
+                    </div>
+                    <div id="txtPhone">
+                        <p>+359 888 77 55 44</p>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -69,5 +76,13 @@
             &copy 2014 by Software University Foundation, No Rights Reserved
         </div>
     </footer>
+    <script src="lib/angular/angular.min.js"></script>
+    <script>
+        var app = angular.module('adv', []);
+
+        app.controller('Adv', function($scope){
+            $scope.name = 'Adv App';
+        });
+    </script>
 </body>
 </html>

@@ -35,6 +35,10 @@ header, footer {
             background: rgb(169,209,142);
         }
 
+    .wrapper .secCenter .blockCenter {
+        text-align: left;
+    }
+
 .button {
     margin: 20px 0 10px 0;
     width: 100px;
@@ -46,15 +50,16 @@ header, footer {
 .wrapper .secCenter {
     margin: 20px auto;
     text-align: center;
-    width: 600px;
+    width: 540px;
 }
 
-#txtDescription, #txtName {
-    margin: 10px 0 0 20px;
+#txtDescription, #txtName, #txtEmail, #txtPhone {
+    margin: 0 0 10px 20px;
     display: inline-block;
     float: right;
     padding: 5px;
     width: 300px;
+    background: rgb(197,224,180);
     border: 1px solid rgb(80,126,50);
 }
 
@@ -75,7 +80,7 @@ header, footer {
     display: inline-block;
     float: right;
     text-align: left;
-    width: 300px;
+    width: 360px;
 }
 
 img {
@@ -108,7 +113,7 @@ li {
     }
 
 h3 {
-    margin: 0 15px;
+    margin: 5px 15px;
     border-bottom: 1px solid rgb(80,126,50);
 }
 
