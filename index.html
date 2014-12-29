@@ -23,48 +23,61 @@
             </div>
         </div>
         <div class="secCenter">
-            <div class="blockCenter">
+            <div class="blockAdv">
                 <h2>iPhone 4S for Sale</h2>
-                <div id="imgPicture">
+                <div class="imgPicture">
                     <img ng-src="{{imgAdv.pict}}" />
                 </div>
-                <div id="rightContent">
-                    <div id="txtDescription">
+                <div class="rightContent">
+                    <div class="txtDescription">
                         <p>I have iPhone 4S 16GB for sale. Good price. Like a new. Please call me in the evenings or at weekends.</p>
                     </div>
-                    <div id="txtName">
+                    <div class="txtName">
                         <label for="txtNameData">Name</label>
-                        <div id="txtNameData">Viktor</div>
+                        <div class="txtNameData">Viktor</div>
                     </div>
-
-                    <div id="txtEmail">
+                    <div class="txtEmail">
                         <label for="txtEmailData">Email:</label>
-                        <div id="txtEmailData">igracha@abv.bg</div>
+                        <div class="txtEmailData">igracha@abv.bg</div>
                     </div>
-                    <div id="txtPhone">
+                    <div class="txtPhone">
                         <label for="txtPhoneData">Tel.</label>
-                        <div id="txtPhoneData">+359 888 77 55 44</div>
+                        <div class="txtPhoneData">+359 888 77 55 44</div>
                     </div>
                 </div>
                 <div class="clear"></div>
             </div>
             <div class="blockPaging">
             </div>
+            <div class="blockLogin">
+                <h3>Login</h3>
+                <div class="centerContent">
+                    <div class="txtName">
+                        <label for="txtNameData">Username:</label>
+                        <div class="txtNameData">maria</div>
+                    </div>
+                    <div class="txtEmail">
+                        <label for="txtEmailData">Password:</label>
+                        <div class="txtEmailData">12345678</div>
+                    </div>
+                    <button id="btnLoginAction" class="button">Login</button>
+                    <a href="#" class="centerHref">Register here</a>
+                </div>
+                <div class="clear"></div>
+            </div>
         </div>
         <div class="secRight">
             <div class="blockCategories">
                 <h3>Categories</h3>
                 <ul>
-                    <li ng-repeat="cat in ngCategories" ng-class-odd="classTempClass">
-                        {{cat.catName}}
+                    <li ng-repeat="cat in ngCategories" ng-class-odd="classTempClass">{{cat.catName}}
                     </li>
                 </ul>
             </div>
             <div class="blockTowns">
                 <h3>Towns</h3>
                 <ul>
-                    <li ng-repeat="city in ngCities">
-                        {{city.City}}
+                    <li ng-repeat="city in ngCities">{{city.City}}
                     </li>
                 </ul>
             </div>

@@ -34,14 +34,20 @@ header, footer {
         width: 150px;
     }
 
-        .wrapper .secLeft .blockLoginRegister, .wrapper .secCenter .blockCenter {
+        .wrapper .secLeft .blockLoginRegister, .wrapper .secCenter .blockAdv, .wrapper .secCenter .blockLogin {
             padding: 10px;
             border: 1px solid rgb(80,126,50);
             background: rgb(169,209,142);
         }
 
-    .wrapper .secCenter .blockCenter {
+    .wrapper .secCenter .blockAdv {
         text-align: left;
+    }
+
+    .wrapper .secCenter .blockLogin {
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 400px;
     }
 
 .button {
@@ -58,23 +64,23 @@ header, footer {
     width: 540px;
 }
 
-#txtName, #txtEmail, #txtPhone {
+.txtName, .txtEmail, .txtPhone {
     margin: 0 0 10px 20px;
     display: inline-block;
     float: right;
     padding: 5px 0 5px 5px;
     width: 360px;
     background: rgb(169,209,142);
-    vertical-align:text-bottom;
+    vertical-align: text-bottom;
 }
 
-    label{
-        display:inline-block;
-        text-align: right;
-        margin-top: 5px;
-    }
+label {
+    display: inline-block;
+    text-align: right;
+    margin-top: 5px;
+}
 
-#txtDescription, #txtNameData, #txtEmailData, #txtPhoneData {
+.txtDescription, .txtNameData, .txtEmailData, .txtPhoneData {
     display: inline-block;
     float: right;
     padding: 5px;
@@ -83,18 +89,18 @@ header, footer {
     border: 1px solid rgb(80,126,50);
 }
 
-#txtEmailData {
-    text-decoration:underline;
+.txtEmailData {
+    text-decoration: underline;
     color: blue;
 }
 
-#txtDescription {
+.txtDescription {
     margin: 0 0 20px 0;
     width: 360px;
     border: 1px solid rgb(80,126,50);
 }
 
-#imgPicture {
+.imgPicture {
     width: 80px;
     display: inline-block;
     float: left;
@@ -104,11 +110,17 @@ header, footer {
     border: 1px solid rgb(80,126,50);
 }
 
-#rightContent {
+.rightContent {
     display: inline-block;
     float: right;
     text-align: left;
     width: 360px;
+}
+
+.centerContent {
+    text-align: left;
+    width: 360px;
+    padding: 20px;
 }
 
 img {
@@ -134,7 +146,6 @@ li {
 .wrapper .secRight {
     float: right;
     width: 150px;
-
 }
 
     .wrapper .secRight .blockCategories, .wrapper .secRight .blockTowns {
@@ -142,6 +153,11 @@ li {
         border: 1px solid rgb(80,126,50);
         background: rgb(169,209,142);
     }
+
+.centerHref {
+    display: inline-block;
+    margin-left: 165px;
+}
 
 h2 {
     margin-bottom: 5px;
