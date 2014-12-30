@@ -1,6 +1,28 @@
 app.controller('Adv', function ($scope, $http) {
     $scope.name = 'Ads - Home';
 
+    var navigations = [
+    {
+        navName: 'Home',
+        NavId: 'H'
+    },
+    {
+        navName: 'My Ads',
+        NavId: 'My'
+    },
+    {
+        navName: 'Publish New Ad',
+        NavId: 'New'
+    },
+    {
+        navName: 'Edit Profile',
+        NavId: 'Edit'
+    }
+    ];
+
+    $scope.ngNavigation = navigations;
+
+
     var categories = [
         {
             catName: 'All',

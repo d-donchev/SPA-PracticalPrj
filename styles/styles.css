@@ -38,6 +38,7 @@ header, footer {
             padding: 10px;
             border: 1px solid rgb(80,126,50);
             background: rgb(169,209,142);
+            margin-bottom: 10px;
         }
 
     .wrapper .secCenter .blockAdv {
@@ -49,7 +50,8 @@ header, footer {
         border-radius: 10px;
         width: 400px;
     }
-        .wrapper .secCenter .blockRegister {
+
+    .wrapper .secCenter .blockRegister {
         margin-top: 20px;
         border-radius: 10px;
         width: 500px;
@@ -159,8 +161,9 @@ li {
     width: 150px;
 }
 
-    .wrapper .secRight .blockCategories, .wrapper .secRight .blockTowns {
-        margin: 0 0 20px 20px;
+    .wrapper .secRight .blockCategories, .wrapper .secRight .blockTowns, .wrapper .secLeft .blockNavigation {
+        margin: 0 0 20px 0px;
+        width: 150px;
         border: 1px solid rgb(80,126,50);
         background: rgb(169,209,142);
     }
