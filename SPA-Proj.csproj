@@ -57,12 +57,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\css\bootstrap-theme.css" />
+    <Content Include="app\css\bootstrap-theme.min.css" />
+    <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\css\bootstrap.min.css" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\lib\bootstrap\bootstrap.js" />
+    <Content Include="app\lib\bootstrap\bootstrap.min.js" />
+    <Content Include="app\lib\jquery\jquery-2.1.1.js" />
+    <Content Include="app\lib\bootstrap\npm.js" />
     <Content Include="images\i-phone.png" />
     <Content Include="images\no-img.png" />
     <Content Include="index.html" />
-    <Content Include="js\app.js" />
-    <Content Include="js\controllers\Adv.js" />
-    <Content Include="lib\angular\angular.min.js" />
+    <Content Include="app\js\app.js" />
+    <Content Include="app\js\controllers\Adv.js" />
+    <Content Include="app\lib\angular\angular.min.js" />
     <Content Include="styles\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -70,6 +79,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\css\bootstrap-theme.css.map" />
+    <Content Include="app\css\bootstrap.css.map" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,7 +91,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\img\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
