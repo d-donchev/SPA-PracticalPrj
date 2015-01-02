@@ -2,13 +2,16 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="app/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/bootstrap-theme.min.org.css" rel="stylesheet" />
+    <link href="app/css/app.css" rel="stylesheet" />
     <title>Ads</title>
 </head>
-<body ng-app="adv" ng-controller="Adv">
+<body ng-app="adv" ng-controller="AdvController">
 
     <script src="app/lib/angular/angular.min.js"></script>
     <script src="app/lib/jquery/jquery-2.1.1.js"></script>
+    <script src="app/lib/bootstrap/bootstrap.min.js"></script>
     <header>
         <nav id="menu">
             <h1>{{name}}</h1>
@@ -17,17 +20,17 @@
 
     <div class="wrapper">
         <div class="secLeft">
-            <div class="blockLoginRegister">
-                <p>To publish a new ad, please login.</p>
-                <button id="btnLogin" class="button">Login</button>
-                <button id="btnRegister" class="button">Register</button>
-            </div>
             <div class="blockNavigation">
                 <h3>Navigation</h3>
                 <ul>
                     <li ng-repeat="nav in ngNavigation" ng-class-odd="classTempClass">{{nav.navName}}
                     </li>
                 </ul>
+            </div>
+            <div class="blockLoginRegister">
+                <p>To publish a new ad, please login.</p>
+                <button id="btnLogin" class="button">Login</button>
+                <button id="btnRegister" class="button">Register</button>
             </div>
         </div>
         <div class="secCenter">

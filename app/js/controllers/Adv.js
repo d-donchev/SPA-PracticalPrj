@@ -1,4 +1,5 @@
-app.controller('Adv', function ($scope, $http) {
+'use strict';
+app.controller('AdvController', function ($scope, $http) {
     $scope.name = 'Ads - Home';
 
     var navigations = [

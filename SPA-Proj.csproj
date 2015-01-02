@@ -72,7 +72,7 @@
     <Content Include="app\js\app.js" />
     <Content Include="app\js\controllers\Adv.js" />
     <Content Include="app\lib\angular\angular.min.js" />
-    <Content Include="styles\styles.css" />
+    <Content Include="app\css\app.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\img\" />
+    <Folder Include="styles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
