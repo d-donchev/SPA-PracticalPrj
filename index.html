@@ -43,6 +43,10 @@
                     <div class="txtDescription">
                         <p>I have iPhone 4S 16GB for sale. Good price. Like a new. Please call me in the evenings or at weekends.</p>
                     </div>
+                    <ul>
+                        <li ng-repeat="ads in homeAdv">{{ads.title}}
+                        </li>
+                    </ul>
                     <div class="txtName">
                         <label for="txtNameData">Name</label>
                         <div class="txtNameData">Viktor</div>
@@ -66,11 +70,11 @@
                 <div class="centerContent">
                     <div class="txtUserName">
                         <label for="txtUserNameData">Username:</label>
-                        <input type="text" class="txtUserNameData" placeholder="Username..."/>
+                        <input type="text" class="txtUserNameData" placeholder="Username..." />
                     </div>
                     <div class="txtPass">
                         <label for="txtPassData">Password:</label>
-                        <input type="password" class="txtPassData" placeholder="Password..."/>
+                        <input type="password" class="txtPassData" placeholder="Password..." />
                     </div>
                     <button id="btnLoginAction" class="button">Login</button>
                     <a href="#" class="centerHref">Register here</a>
@@ -83,31 +87,31 @@
                 <div class="centerContent">
                     <div class="txtUserName">
                         <label for="txtUserNameData">Username:</label>
-                        <input type="text" class="txtUserNameData" placeholder="Username..."/>
+                        <input type="text" class="txtUserNameData" placeholder="Username..." />
                     </div>
                     <div class="txtPass">
                         <label for="txtPassData">Password:</label>
-                        <input type="password" class="txtPassData" placeholder="Password..."/>
+                        <input type="password" class="txtPassData" placeholder="Password..." />
                     </div>
                     <div class="txtName">
                         <label for="txtNameData">Name:</label>
-                        <input type="text" class="txtNameData" placeholder="Full Name..."/>
+                        <input type="text" class="txtNameData" placeholder="Full Name..." />
                     </div>
                     <div class="txtPhone">
                         <label for="txtPhoneData">Phone:</label>
-                        <input type="text" class="txtPhoneData" placeholder="Phone..."/>
+                        <input type="text" class="txtPhoneData" placeholder="Phone..." />
                     </div>
                     <div class="txtConfPass">
                         <label for="txtPassData">Confirm password:</label>
-                        <input type="password" class="txtPassData" placeholder="Password..."/>
+                        <input type="password" class="txtPassData" placeholder="Password..." />
                     </div>
                     <div class="txtEmail">
                         <label for="txtEmailData">Email:</label>
-                        <input type="text" class="txtEmailData" placeholder="Email..."/>
+                        <input type="text" class="txtEmailData" placeholder="Email..." />
                     </div>
                     <div class="txtTown">
                         <label for="txtTownData">Town:</label>
-                        <input type="text" class="txtTownData" placeholder="Town..."/>
+                        <input type="text" class="txtTownData" placeholder="Town..." />
                     </div>
 
                     <button id="btnRegisterAction" class="button">Register</button>
@@ -129,7 +133,7 @@
             <div class="blockTowns">
                 <h3>Towns</h3>
                 <ul>
-                    <li ng-repeat="city in ngCities">{{city.City}}
+                    <li ng-repeat="city in ads">{{city.date}}
                     </li>
                 </ul>
             </div>

@@ -56,10 +56,15 @@ app.controller('AdvController', function ($scope, $http) {
     $scope.imgAdv = imgInfo;
 
     $scope.classTempClass = 'dummyClass';
-    
-    $http.get("http://www.w3schools.com/website/Customers_JSON.php") 
-    .success(function (resp) {
-        $scope.ngCities = resp;
+
+    $http.get("http://softuni-ads.azurewebsites.net/api/ads?townid=10&categoryid=8")
+            .success(function (resp1) {
+        $scope.ngCities = resp1;
+    });
+
+    $http.get("http://softuni-ads.azurewebsites.net/api/ads")
+        .success(function (resp) {
+        $scope.ads = resp;
     });
 
 });
