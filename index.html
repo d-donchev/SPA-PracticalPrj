@@ -24,7 +24,7 @@
             <div class="blockNavigation">
                 <h3>Navigation</h3>
                 <ul>
-                    <li ng-repeat="nav in ngNavigation" ng-class-odd="classTempClass">{{nav.navName}}
+                    <li ng-repeat="ad in ads" >{{ad.title}}
                     </li>
                 </ul>
             </div>
@@ -148,7 +148,7 @@
         </div>
     </footer>
     <script src="app/js/app.js"></script>
-    <script src="app/js/controllers/AdvCtrl.js"></script>
-    <script src="app/js/services/AdvSvc.js"></script>
+    <script src="app/js/controllers/AdvController.js"></script>
+    <script src="app/js/services/AdvService.js"></script>
 </body>
 </html>

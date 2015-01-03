@@ -1,8 +1,21 @@
 'use strict';
-app.controller('AdvController', ['$scope', 'AdvResource', function ($scope, AdvResource) {
+app.controller('AdvController', ['$scope', 'pageSize', 'AdvService', function ($scope, pageSize, AdvService) {
     $scope.name = 'Ads - Home';
 
-    $scope.allAdv = AdvResource.getAll();
+    $scope.requestParameters = {
+        startPage: 1,
+        pageSize: pageSize
+    };
+
+    $scope.getAds = function (requestParameters) {
+        AdvService.getAll(requestParameters)
+            .then(function (data) {
+                $scope.ads = data.ads;
+            }
+        )
+    };
+
+    $scope.getAds($scope.requestParameters);
 
     var navigations = [
     {
