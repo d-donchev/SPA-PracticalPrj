@@ -1,6 +1,8 @@
 'use strict';
-app.controller('AdvController', function ($scope, $http) {
+app.controller('AdvController', ['$scope', 'AdvResource', function ($scope, AdvResource) {
     $scope.name = 'Ads - Home';
+
+    $scope.allAdv = AdvResource.getAll();
 
     var navigations = [
     {
@@ -56,7 +58,7 @@ app.controller('AdvController', function ($scope, $http) {
     $scope.imgAdv = imgInfo;
 
     $scope.classTempClass = 'dummyClass';
-
+/*
     $http.get("http://softuni-ads.azurewebsites.net/api/ads?townid=10&categoryid=8")
             .success(function (resp1) {
         $scope.ngCities = resp1;
@@ -66,8 +68,8 @@ app.controller('AdvController', function ($scope, $http) {
         .success(function (resp) {
         $scope.ads = resp;
     });
-
-});
+    */
+}]);
 
 app.controller('AdvAdmin', function ($scope, $http) {
     $scope.name = 'Adv - Admin';

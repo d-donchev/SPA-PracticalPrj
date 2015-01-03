@@ -62,6 +62,9 @@
     <Content Include="app\css\bootstrap.css" />
     <Content Include="app\css\bootstrap.min.css" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\js\services\AdvSvc.js" />
+    <Content Include="app\lib\angular\angular-resource.min.js" />
+    <Content Include="app\lib\angular\angular.js" />
     <Content Include="app\lib\bootstrap\bootstrap.js" />
     <Content Include="app\lib\bootstrap\bootstrap.min.js" />
     <Content Include="app\lib\jquery\jquery-2.1.1.js" />
@@ -70,7 +73,7 @@
     <Content Include="images\no-img.png" />
     <Content Include="index.html" />
     <Content Include="app\js\app.js" />
-    <Content Include="app\js\controllers\Adv.js" />
+    <Content Include="app\js\controllers\AdvCtrl.js" />
     <Content Include="app\lib\angular\angular.min.js" />
     <Content Include="app\css\app.css" />
     <Content Include="Web.config" />

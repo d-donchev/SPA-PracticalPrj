@@ -9,7 +9,8 @@
 </head>
 <body ng-app="adv" ng-controller="AdvController">
 
-    <script src="app/lib/angular/angular.min.js"></script>
+    <script src="app/lib/angular/angular.js"></script>
+    <script src="app/lib/angular/angular-resource.min.js"></script>
     <script src="app/lib/jquery/jquery-2.1.1.js"></script>
     <script src="app/lib/bootstrap/bootstrap.min.js"></script>
     <header>
@@ -37,14 +38,14 @@
             <div class="blockAdv">
                 <h2>iPhone 4S for Sale</h2>
                 <div class="imgPicture">
-                    <img ng-src="{{imgAdv.pict}}" />
+                    <img ng-src="{{img.pict}}" />
                 </div>
                 <div class="rightContent">
                     <div class="txtDescription">
                         <p>I have iPhone 4S 16GB for sale. Good price. Like a new. Please call me in the evenings or at weekends.</p>
                     </div>
                     <ul>
-                        <li ng-repeat="ads in homeAdv">{{ads.title}}
+                        <li ng-repeat="ad in allAdv">{{ad.title}}
                         </li>
                     </ul>
                     <div class="txtName">
@@ -147,6 +148,7 @@
         </div>
     </footer>
     <script src="app/js/app.js"></script>
-    <script src="app/js/controllers/Adv.js"></script>
+    <script src="app/js/controllers/AdvCtrl.js"></script>
+    <script src="app/js/services/AdvSvc.js"></script>
 </body>
 </html>
