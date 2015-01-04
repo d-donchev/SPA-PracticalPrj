@@ -1,13 +1,11 @@
 ﻿'use strict';
 
-app.factory('townService', ['$resource', 'mainUrl',  function ($resource, mainUrl) {
-    var adsResource = $resource(mainUrl + '/towns', null, {
-        'getAll': { method: 'GET', isArray: false }
-    });
+app.factory('TownService', ['$resource', 'mainUrl', function ($resource, mainUrl) {
+    var townService = $resource(mainUrl + '/towns');
 
     return {
         getAll: function () {
-             return adsResource.getAll().$promise;
+            return townService.query();
         }
     }
 }]);

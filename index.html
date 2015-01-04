@@ -123,11 +123,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="blockTowns">
+            <div class="blockTowns" ng-controller="TownController">
                 <h3>Towns</h3>
                 <ul>
-                    <li ng-repeat="city in ads">{{city.date}}
-                    </li>
+                    <li ng-repeat="town in towns">{{town.name}}</li>
                 </ul>
             </div>
         </div>
