@@ -116,10 +116,10 @@
 
         </div>
         <div class="secRight">
-            <div class="blockCategories">
+            <div class="blockCategories" ng-controller="CategoryController">
                 <h3>Categories</h3>
                 <ul>
-                    <li ng-repeat="cat in ngCategories" ng-class-odd="classTempClass">{{cat.catName}}
+                    <li ng-repeat="cat in category" ng-class-odd="classTempClass">{{cat.name}}
                     </li>
                 </ul>
             </div>
@@ -143,5 +143,7 @@
     <script src="app/js/services/AdvService.js"></script>
     <script src="app/js/controllers/TownController.js"></script>
     <script src="app/js/services/TownService.js"></script>
+    <script src="app/js/controllers/CategoryController.js"></script>
+    <script src="app/js/services/CategoryService.js"></script>
 </body>
 </html>
