@@ -12,7 +12,7 @@
     <script src="app/lib/angular/angular.js"></script>
     <script src="app/lib/angular/angular-resource.min.js"></script>
     <script src="app/lib/jquery/jquery-2.1.1.js"></script>
-    <script src="app/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="app/lib/noty/packaged/jquery.noty.packaged.min.js"></script>
     <header>
         <nav id="menu">
             <h1>{{name}}</h1>
@@ -26,13 +26,26 @@
             </div>
             <div class="blockLoginRegister">
                 <p>To publish a new ad, please login.</p>
-                <button id="btnLogin" class="button">Login</button>
+                <button id="btnLogin" class="button" onclick="SuccessLogin('Success Login')">Login</button>
+
+                <script>
+                    function SuccessLogin(msg) {
+                        noty({
+                            text: msg,
+                            type: "success",
+                            layout: "topCenter",
+                            timeout: 2000
+                        });
+                    }
+
+                </script>
                 <button id="btnRegister" class="button">Register</button>
             </div>
         </div>
         <div class="secCenter">
             <div class="blockAdv" ng-repeat="ad in ads">
-                <h2>{{ad.title}}</h2><div class="col-lg-4 secRight">{{ad.date | date: "d-MMM-yyyy"}}</div>
+                <h2>{{ad.title}}</h2>
+                <div class="col-lg-4 secRight">{{ad.date | date: "d-MMM-yyyy"}}</div>
                 <div class="imgPicture">
                     <img ng-src="{{img.pict}}" />
                 </div>
@@ -138,6 +151,8 @@
             &copy 2014 by Software University Foundation, No Rights Reserved
         </div>
     </footer>
+    <script src="app/lib/bootstrap/bootstrap.min.js"></script>
+
     <script src="app/js/app.js"></script>
     <script src="app/js/controllers/AdvController.js"></script>
     <script src="app/js/services/AdvService.js"></script>
