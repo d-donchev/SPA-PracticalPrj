@@ -73,6 +73,9 @@
     <Content Include="app\lib\bootstrap\bootstrap.min.js" />
     <Content Include="app\lib\jquery\jquery-2.1.1.js" />
     <Content Include="app\lib\bootstrap\npm.js" />
+    <Content Include="app\lib\noty\jquery.noty.js" />
+    <Content Include="app\lib\noty\packaged\jquery.noty.packaged.js" />
+    <Content Include="app\lib\noty\packaged\jquery.noty.packaged.min.js" />
     <Content Include="images\i-phone.png" />
     <Content Include="images\no-img.png" />
     <Content Include="index.html" />
