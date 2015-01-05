@@ -68,6 +68,7 @@
     <Content Include="app\js\services\CategoryService.js" />
     <Content Include="app\js\services\TownService.js" />
     <Content Include="app\lib\angular\angular-resource.min.js" />
+    <Content Include="app\lib\angular\angular-route.min.js" />
     <Content Include="app\lib\angular\angular.js" />
     <Content Include="app\lib\bootstrap\bootstrap.js" />
     <Content Include="app\lib\bootstrap\bootstrap.min.js" />
