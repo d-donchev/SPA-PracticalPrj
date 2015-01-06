@@ -64,6 +64,10 @@
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\js\controllers\CategoryController.js" />
     <Content Include="app\js\controllers\TownController.js" />
+    <Content Include="app\js\directives\categories.html" />
+    <Content Include="app\js\directives\left-sidebar.html" />
+    <Content Include="app\js\directives\public-ads.html" />
+    <Content Include="app\js\directives\towns.html" />
     <Content Include="app\js\services\AdvService.js" />
     <Content Include="app\js\services\CategoryService.js" />
     <Content Include="app\js\services\TownService.js" />

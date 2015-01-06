@@ -21,130 +21,134 @@
     </header>
 
     <div class="wrapper">
-        <div class="secLeft">
-            <div class="blockNavigation">
-                <h3>Navigation</h3>
-            </div>
-            <div class="blockLoginRegister">
-                <p>To publish a new ad, please login.</p>
-                <button id="btnLogin" class="button" onclick="SuccessLogin('Success Login')">Login</button>
+        <div class="Row">
 
-                <script>
-                    function SuccessLogin(msg) {
-                        noty({
-                            text: msg,
-                            type: "success",
-                            layout: "topCenter",
-                            timeout: 2000
-                        });
-                    }
 
-                </script>
-                <button id="btnRegister" class="button">Register</button>
+            <div class="secLeft col-md-3">
+                <div class="blockNavigation">
+                    <h3>Navigation</h3>
+                </div>
+                <div class="blockLoginRegister">
+                    <p>To publish a new ad, please login.</p>
+                    <button id="btnLogin" class="button" onclick="SuccessLogin('Success Login')">Login</button>
+
+                    <script>
+                        function SuccessLogin(msg) {
+                            noty({
+                                text: msg,
+                                type: "success",
+                                layout: "topCenter",
+                                timeout: 2000
+                            });
+                        }
+
+                    </script>
+                    <button id="btnRegister" class="button">Register</button>
+                </div>
             </div>
+            <div class="secCenter col-md-6">
+                <div class="blockAdv" ng-repeat="ad in ads">
+                    <h2>{{ad.title}}</h2>
+                    <div class="col-lg-4 secRight">{{ad.date | date: "d-MMM-yyyy"}}</div>
+                    <div class="imgPicture">
+                        <img ng-src="{{img.pict}}" />
+                    </div>
+                    <div class="rightContent">
+                        <div class="txtDescription">
+                            <p>{{ad.text}}</p>
+                        </div>
+                        <div class="txtName">
+                            <label for="txtNameData">Name</label>
+                            <div class="txtNameData">{{ad.ownerName}}&nbsp</div>
+                        </div>
+                        <div class="txtEmail">
+                            <label for="txtEmailData">Email:</label>
+                            <div class="txtEmailData">{{ad.ownerEmail}}&nbsp</div>
+                        </div>
+                        <div class="txtPhone">
+                            <label for="txtPhoneData">Tel.</label>
+                            <div class="txtPhoneData">{{ad.ownerPhone}}&nbsp</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="blockPaging">
+                </div>
+
+                <div class="blockLogin">
+                    <h3>Login</h3>
+                    <div class="centerContent">
+                        <div class="txtUserName">
+                            <label for="txtUserNameData">Username:</label>
+                            <input type="text" class="txtUserNameData" placeholder="Username..." />
+                        </div>
+                        <div class="txtPass">
+                            <label for="txtPassData">Password:</label>
+                            <input type="password" class="txtPassData" placeholder="Password..." />
+                        </div>
+                        <button id="btnLoginAction" class="button">Login</button>
+                        <a href="#" class="centerHref">Register here</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="blockRegister">
+                    <h3>User Registration</h3>
+                    <div class="centerContent">
+                        <div class="txtUserName">
+                            <label for="txtUserNameData">Username:</label>
+                            <input type="text" class="txtUserNameData" placeholder="Username..." />
+                        </div>
+                        <div class="txtPass">
+                            <label for="txtPassData">Password:</label>
+                            <input type="password" class="txtPassData" placeholder="Password..." />
+                        </div>
+                        <div class="txtName">
+                            <label for="txtNameData">Name:</label>
+                            <input type="text" class="txtNameData" placeholder="Full Name..." />
+                        </div>
+                        <div class="txtPhone">
+                            <label for="txtPhoneData">Phone:</label>
+                            <input type="text" class="txtPhoneData" placeholder="Phone..." />
+                        </div>
+                        <div class="txtConfPass">
+                            <label for="txtPassData">Confirm password:</label>
+                            <input type="password" class="txtPassData" placeholder="Password..." />
+                        </div>
+                        <div class="txtEmail">
+                            <label for="txtEmailData">Email:</label>
+                            <input type="text" class="txtEmailData" placeholder="Email..." />
+                        </div>
+                        <div class="txtTown">
+                            <label for="txtTownData">Town:</label>
+                            <input type="text" class="txtTownData" placeholder="Town..." />
+                        </div>
+
+                        <button id="btnRegisterAction" class="button">Register</button>
+                        <a href="#" class="centerHref">Login here</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+
+            </div>
+            <div class="secRight col-md-3">
+                <div class="blockCategories" ng-controller="CategoryController">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li ng-repeat="cat in category" ng-class-odd="classTempClass">{{cat.name}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="blockTowns" ng-controller="TownController">
+                    <h3>Towns</h3>
+                    <ul>
+                        <li ng-repeat="town in towns">{{town.name}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="secCenter">
-            <div class="blockAdv" ng-repeat="ad in ads">
-                <h2>{{ad.title}}</h2>
-                <div class="col-lg-4 secRight">{{ad.date | date: "d-MMM-yyyy"}}</div>
-                <div class="imgPicture">
-                    <img ng-src="{{img.pict}}" />
-                </div>
-                <div class="rightContent">
-                    <div class="txtDescription">
-                        <p>{{ad.text}}</p>
-                    </div>
-                    <div class="txtName">
-                        <label for="txtNameData">Name</label>
-                        <div class="txtNameData">{{ad.ownerName}}&nbsp</div>
-                    </div>
-                    <div class="txtEmail">
-                        <label for="txtEmailData">Email:</label>
-                        <div class="txtEmailData">{{ad.ownerEmail}}&nbsp</div>
-                    </div>
-                    <div class="txtPhone">
-                        <label for="txtPhoneData">Tel.</label>
-                        <div class="txtPhoneData">{{ad.ownerPhone}}&nbsp</div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="blockPaging">
-            </div>
-
-            <div class="blockLogin">
-                <h3>Login</h3>
-                <div class="centerContent">
-                    <div class="txtUserName">
-                        <label for="txtUserNameData">Username:</label>
-                        <input type="text" class="txtUserNameData" placeholder="Username..." />
-                    </div>
-                    <div class="txtPass">
-                        <label for="txtPassData">Password:</label>
-                        <input type="password" class="txtPassData" placeholder="Password..." />
-                    </div>
-                    <button id="btnLoginAction" class="button">Login</button>
-                    <a href="#" class="centerHref">Register here</a>
-                </div>
-                <div class="clear"></div>
-            </div>
-
-            <div class="blockRegister">
-                <h3>User Registration</h3>
-                <div class="centerContent">
-                    <div class="txtUserName">
-                        <label for="txtUserNameData">Username:</label>
-                        <input type="text" class="txtUserNameData" placeholder="Username..." />
-                    </div>
-                    <div class="txtPass">
-                        <label for="txtPassData">Password:</label>
-                        <input type="password" class="txtPassData" placeholder="Password..." />
-                    </div>
-                    <div class="txtName">
-                        <label for="txtNameData">Name:</label>
-                        <input type="text" class="txtNameData" placeholder="Full Name..." />
-                    </div>
-                    <div class="txtPhone">
-                        <label for="txtPhoneData">Phone:</label>
-                        <input type="text" class="txtPhoneData" placeholder="Phone..." />
-                    </div>
-                    <div class="txtConfPass">
-                        <label for="txtPassData">Confirm password:</label>
-                        <input type="password" class="txtPassData" placeholder="Password..." />
-                    </div>
-                    <div class="txtEmail">
-                        <label for="txtEmailData">Email:</label>
-                        <input type="text" class="txtEmailData" placeholder="Email..." />
-                    </div>
-                    <div class="txtTown">
-                        <label for="txtTownData">Town:</label>
-                        <input type="text" class="txtTownData" placeholder="Town..." />
-                    </div>
-
-                    <button id="btnRegisterAction" class="button">Register</button>
-                    <a href="#" class="centerHref">Login here</a>
-                </div>
-                <div class="clear"></div>
-            </div>
-
-
-        </div>
-        <div class="secRight">
-            <div class="blockCategories" ng-controller="CategoryController">
-                <h3>Categories</h3>
-                <ul>
-                    <li ng-repeat="cat in category" ng-class-odd="classTempClass">{{cat.name}}
-                    </li>
-                </ul>
-            </div>
-            <div class="blockTowns" ng-controller="TownController">
-                <h3>Towns</h3>
-                <ul>
-                    <li ng-repeat="town in towns">{{town.name}}</li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear"></div>
     </div>
 
     <footer>
