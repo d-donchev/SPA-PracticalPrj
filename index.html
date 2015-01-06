@@ -25,6 +25,7 @@
 
 
             <div class="secLeft col-md-3">
+                <left-public-siebar></left-public-siebar>
                 <div class="blockNavigation">
                     <h3>Navigation</h3>
                 </div>
@@ -47,6 +48,7 @@
                 </div>
             </div>
             <div class="secCenter col-md-6">
+                <public-ads></public-ads>
                 <div class="blockAdv" ng-repeat="ad in ads">
                     <h2>{{ad.title}}</h2>
                     <div class="col-lg-4 secRight">{{ad.date | date: "d-MMM-yyyy"}}</div>
@@ -133,6 +135,8 @@
 
             </div>
             <div class="secRight col-md-3">
+                <categories></categories>
+                <towns></towns>
                 <div class="blockCategories" ng-controller="CategoryController">
                     <h3>Categories</h3>
                     <ul>
