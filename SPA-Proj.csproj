@@ -64,11 +64,15 @@
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\js\controllers\CategoryController.js" />
     <Content Include="app\js\controllers\HomeController.js" />
+    <Content Include="app\js\controllers\LoginController.js" />
+    <Content Include="app\js\controllers\RegisterController.js" />
     <Content Include="app\js\controllers\TownController.js" />
     <Content Include="app\js\directives\categories.js" />
     <Content Include="app\js\directives\left-sidebar.js" />
     <Content Include="app\js\directives\public-ads.js" />
     <Content Include="app\js\directives\towns.js" />
+    <Content Include="app\templates\home.html" />
+    <Content Include="app\templates\login.html" />
     <Content Include="app\templates\public\categories.html" />
     <Content Include="app\templates\public\left-sidebar.html" />
     <Content Include="app\templates\public\public-ads.html" />
@@ -86,6 +90,7 @@
     <Content Include="app\lib\noty\jquery.noty.js" />
     <Content Include="app\lib\noty\packaged\jquery.noty.packaged.js" />
     <Content Include="app\lib\noty\packaged\jquery.noty.packaged.min.js" />
+    <Content Include="app\templates\register.html" />
     <Content Include="images\i-phone.png" />
     <Content Include="images\no-img.png" />
     <Content Include="index.html" />
