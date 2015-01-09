@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\img\" />
+    <Folder Include="app\js\services\data\" />
     <Folder Include="styles\" />
   </ItemGroup>
   <PropertyGroup>
