@@ -71,6 +71,8 @@
     <Content Include="app\js\directives\left-sidebar.js" />
     <Content Include="app\js\directives\public-ads.js" />
     <Content Include="app\js\directives\towns.js" />
+    <Content Include="app\js\services\data\townsData.js" />
+    <Content Include="app\js\services\data\userData.js" />
     <Content Include="app\templates\home.html" />
     <Content Include="app\templates\login.html" />
     <Content Include="app\templates\public\categories.html" />
@@ -119,7 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\img\" />
-    <Folder Include="app\js\services\data\" />
     <Folder Include="styles\" />
   </ItemGroup>
   <PropertyGroup>
