@@ -74,6 +74,8 @@
     <Content Include="app\js\services\authentication.js" />
     <Content Include="app\js\services\data\townsData.js" />
     <Content Include="app\js\services\data\userData.js" />
+    <Content Include="app\lib\angular\angular-local-storage.js" />
+    <Content Include="app\lib\angular\angular-local-storage.min.js" />
     <Content Include="app\templates\home.html" />
     <Content Include="app\templates\login.html" />
     <Content Include="app\templates\public\categories.html" />
