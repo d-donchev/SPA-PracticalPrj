@@ -1,5 +1,5 @@
 'use strict';
-var app = angular.module('adv', ['ngResource', 'ngRoute'])
+var app = angular.module('adv', ['ngResource', 'ngRoute', 'LocalStorageModule'])
     .constant('mainUrl', 'http://softuni-ads.azurewebsites.net/api')
     .constant('pageSize', 10);
 
@@ -19,4 +19,6 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.otherwise({
         redirectTo: '/'
     });
+    localStorageServiceProvider.setStorageType = 'localStorage';
+    localStorageServiceProvider.setPrefix = 'Adv';
 }]);

@@ -71,6 +71,7 @@
     <Content Include="app\js\directives\left-sidebar.js" />
     <Content Include="app\js\directives\public-ads.js" />
     <Content Include="app\js\directives\towns.js" />
+    <Content Include="app\js\services\authentication.js" />
     <Content Include="app\js\services\data\townsData.js" />
     <Content Include="app\js\services\data\userData.js" />
     <Content Include="app\templates\home.html" />

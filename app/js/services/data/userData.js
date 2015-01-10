@@ -1,12 +1,17 @@
-﻿app.factory('userData', ['$resource', function ($resource) {
+﻿app.factory('userData', ['$resource', 'mainUrl', 'authentication',  function ($resource, mainUrl, authentication) {
     function registerUser(user) {
-
+        return $resource(mainUrl + 'user/register')
+            .save(user)
+            .$promise
+            .then(function (data) {
+                authentication.saveUser(data);
+        });
     }
     function loginUser(user) {
 
     }
 
-    function logoutUser(user) {
+    function logoutUser() {
 
     }
 
