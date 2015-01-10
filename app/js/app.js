@@ -19,6 +19,6 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.otherwise({
         redirectTo: '/'
     });
-    localStorageServiceProvider.setStorageType = 'localStorage';
-    localStorageServiceProvider.setPrefix = 'Adv';
+    //localStorageServiceProvider.setStorageType = 'localStorage';
+    //localStorageServiceProvider.setPrefix = 'Adv';
 }]);
