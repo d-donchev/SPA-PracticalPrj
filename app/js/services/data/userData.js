@@ -17,11 +17,11 @@
     }
 
     function logoutUser() {
-        return $resource(mainUrl + 'user/login')
+        return $resource(mainUrl + 'user/logout')
             .save(user)
             .$promise
             .then(function (data) {
-                authentication.removeUser(data);
+                authentication.removeUser();
             });
     }
 
@@ -29,5 +29,6 @@
         register: registerUser,
         login: loginUser,
         logout: logoutUser
+
     }
 }]);
